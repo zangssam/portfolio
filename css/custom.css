@@ -14,36 +14,57 @@ a:hover{color: #daab1f;}
 .edu_01 div{margin-top: 10px; font-size: 1.3rem; color: #888888;}
 .edu_02 span{color: #009933 !important;}
 
+/* .edu_box{display: flex; flex-wrap: wrap;}
+.edu_box h2{width: 100%;} */
+.education_01{flex-direction: column !important; /*width: 50%;*/}
+
 .skill_list{margin-bottom: 40px;}
 .skill_list li{position: relative; margin-right: 50px !important; margin-bottom: 50px;}
 .skill_list li span{font-size: 1rem !important; font-weight: 600; position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%);}
 .skill_list_03 li:nth-child(1) span{bottom: -40px;}
 
+.skill_list .percent_bar{width: 35vh; height: 30px; background-color: #bbbbbb; position: absolute; top: 50%; left: 70px; transform: translateY(-50%);}
+.skill_list .percent_bar p{height: 100%; background-color: #009933; color: #ffffff; font-size: 1.2rem; text-align: right; padding-right: 15px;}
+.skill_list .percent_bar_01 p{width: 80%;}
+.skill_list .percent_bar_02 p{width: 90%;}
+.skill_list .percent_bar_03 p{width: 60%;}
+.skill_list .percent_bar_04 p{width: 85%;}
+.skill_list .percent_bar_05 p{width: 80%;}
+.skill_list .percent_bar_06 p{width: 95%;}
+.skill_list .percent_bar_07 p{width: 95%;}
+.skill_list .percent_bar_08 p{width: 85%;}
+
+
+
 .port_01{display: flex; flex-wrap: wrap; position: relative; margin-left: 0;}
-.port_01 li{width: calc((100% - 10px) / 2); height: 200px; background-size: cover; background-repeat: no-repeat; background-position: center 0px;}
+.port_01 li{width: calc((100% - 20px) / 2); height: 200px; background-size: cover; background-repeat: no-repeat; background-position: center 0px;}
 .port_01 li:nth-child(1),.port_01 li:nth-child(2){margin-bottom: 50px;}
-.port_01 li:nth-child(2n){margin-left: 10px;}
+.port_01 li:nth-child(2n){margin-left: 20px;}
 .port_01 li:nth-child(1){background-image: url(../img/project_01_thum.jpg);}
 .port_01 li:nth-child(2){background-image: url(../img/project_02_thum.jpg);}
 .port_01 li:nth-child(3){background-image: url(../img/project_03_thum.jpg);}
 .port_01 li:nth-child(4){background-image: url(../img/project_04_thum.jpg);}
 .port_01 li div{position: relative; z-index: 999;}
-.port_01 div, .port_01 div h5, .port_01 div a{color: #666;}
-
-.port_01 div h5, .port_01 div a{position: absolute;}
-.port_01 div h5{top: 200px;}
-.port_01 div a{top: 200px;}
-.port_01 div a.link{right: 0;}
-.port_01 div a.img{right: 25px;}
+.port_01 div, .port_01 div h5, .port_01 div a{color: #666; font-size: 1rem;}
+.port_01 div span{display: none;}
+.port_01 div h5, .port_01 div a, .port_01 div span{position: absolute;}
+.port_01 div h5{top: 205px; left: 5px;}
+.port_01 div a{top: 205px;}
+.port_01 div a.link{right: 5px;}
+.port_01 div a.img{right: 35px;}
 
 
 .fancybox-overlay{background-color: rgba(0, 0, 0, 0.5); overflow: hidden !important;}
-.fancybox-wrap{width: 100% !important; height: 100% !important;}
-.fancybox-skin{max-height: 90% !important; overflow-x: hidden; overflow-y: scroll; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.fancybox-wrap{width: 65vh !important; max-height: 80vh !important; overflow-y: scroll !important;}
 .fancybox-inner{width: 100% !important; height: auto !important;}
 .fancybox-image{max-height: none !important; height: auto !important;}
-.fancybox-close{position: absolute; top: 0; right: 0;}
 
+/* .fancybox-wrap{width: 80vw !important; max-height: 80vh; overflow-y: scroll !important;}
+.fancybox-inner{width: 100% !important; height: 100% !important;}
+.fancybox-image{max-width: none; max-height: none; width: 100% !important; height: auto;} */
+
+.fancybox-close{position: fixed; top: 2%; right: 2%;}
+/* .fancybox-skin{max-height: 90% !important; overflow-x: hidden; overflow-y: scroll; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);} */
 
 @media(min-width:768px){
   .port_01 li{width: calc((100% - 20px) / 2); height: 300px; background-size: cover; background-repeat: no-repeat; background-position: center 0px;}
@@ -51,6 +72,9 @@ a:hover{color: #daab1f;}
   .port_01 div h5{top: 300px;}
   .port_01 div a{top: 300px;}
   
+  .fancybox-wrap{width: 110vh !important;}
+
+  .skill_list .percent_bar{width: 100vh; left: 70px;}
 }
 
 
@@ -60,17 +84,21 @@ a:hover{color: #daab1f;}
 .port_01{position: relative; display: flex; flex-wrap: wrap; margin: 0;}
 .port_01 li{height: 300px;}
 .port_01 li::after{display: none; content: ''; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 99; position: absolute; top: 0; left: 0;}
-.port_01 div, .port_01 div h5, .port_01 div a{color: rgba(255, 255, 255, 1);}
-.port_01 div h5, .port_01 div a{left: 50%; transform: translateX(-50%);}
+.port_01 div, .port_01 div h5, .port_01 div a, .port_01 div span{color: rgba(255, 255, 255, 1);}
+.port_01 div h5, .port_01 div a, .port_01 div span{left: 50%; transform: translateX(-50%);}
 .port_01 div h5{top: 100px; font-size: 30px; text-align: center;}
+.port_01 div span{top: 140px;}
+.port_01 li:nth-child(4) div span{top: 160px;}
 .port_01 li:nth-child(4) div h5{top: 75px;}
-.port_01 div a{display: block; top: 170px; width: 50px; height: 50px; background-color: rgba(0, 0, 0, 0.3); text-align: center; line-height: 50px; border-radius: 50%;}
+.port_01 div a{display: block; top: 190px; width: 50px; height: 50px; background-color: rgba(0, 0, 0, 0.3); text-align: center; line-height: 50px; border-radius: 50%;}
 .port_01 div a.link{left: 42.5%; right: auto;}
 .port_01 div a.img{left: 57.5%; right: auto;}
 .port_01 li:nth-child(4) a.link{left: 50%;}
 
 .port_01 div{display: none; color: rgba(0, 0, 0, 0); background-color: rgba(0, 0, 0, 0);}
-
+.port_01 div span{display: block;}
 .port_01 li:hover div{display: block;}
 .port_01 li:hover::after{display: block;}
+.skill_box div, .skill_box ul li{margin-left: 100px;}
+.skill_list .percent_bar{left: 0;}
 }
