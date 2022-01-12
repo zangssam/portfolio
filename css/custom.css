@@ -23,11 +23,11 @@ a:hover{color: #fc8f00;}
 .skill_list li span{font-size: 1rem !important; font-weight: 600; position: absolute; bottom: -15px; left: 0;}
 
 .skill_list .percent_bar{width: 80%; height: 30px; background-color: #bbbbbb; position: absolute; top: 50%; left: 70px; transform: translateY(-50%);}
-.skill_list .percent_bar p{width: 0%; height: 100%; background-color: #009933; color: #ffffff; font-size: 1.2rem; text-align: right; padding-right: 15px; transition: all 2s;}
+.skill_list .percent_bar p{width: 0%; height: 100%; background-color: #009933; color: #ffffff00; font-size: 1.2rem; text-align: right; padding-right: 15px; transition: all 2s;}
 .skill_list .percent_bar p.on{color: #ffffff;}
 .skill_list .percent_bar_01 p.on{width: 80%;}
 .skill_list .percent_bar_02 p.on{width: 90%;}
-.skill_list .percent_bar_03 p.on{width: 60%;}
+.skill_list .percent_bar_03 p.on{width: 70%;}
 .skill_list .percent_bar_04 p.on{width: 85%;}
 .skill_list .percent_bar_05 p.on{width: 80%;}
 .skill_list .percent_bar_06 p.on{width: 95%;}
